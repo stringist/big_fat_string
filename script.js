@@ -1,25 +1,27 @@
 "use strict";
 // note: Start with handling just the first space, and/or the first hyphen. Plan on how you would make it repeat for multiple occurences, even if you can’t code it succesfully.
 
-let input = "k-alle SchLeiGgeyy tiHhoney";
-// console.log("_" + input[0].toUpperCase() + input.substring(1, input.indexOf(" ")).toLowerCase() + "_")
-// console.log("_" + input.substring(0, input.indexOf(" ")) + "_");
-// console.log(input.substring(0, input.indexOf(" ")).length);
+const input =
+
+    // let input = "k-alle schLeiGgeyy tiHhoney";
+    // console.log("_" + input[0].toUpperCase() + input.substring(1, input.indexOf(" ")).toLowerCase() + "_")
+    // console.log("_" + input.substring(0, input.indexOf(" ")) + "_");
+    // console.log(input.substring(0, input.indexOf(" ")).length);
 
 
-// If input is a first name: Make the first character in a name uppercase, and the rest lowercase
-function capitalizeFirstName(input) {
-    console.log(
-        "_" +
-        input[0].toUpperCase() +
-        input.substring(1, fullName.indexOf(" ")).toLowerCase() +
-        "_"
-    );
-    return (
-        input[0].toUpperCase() +
-        input.substring(1, input.indexOf(" ")).toLowerCase()
-    );
-}
+    // If input is a first name: Make the first character in a name uppercase, and the rest lowercase
+    function capitalizeFirstName(input) {
+        console.log(
+            "_" +
+            input[0].toUpperCase() +
+            input.substring(1, fullName.indexOf(" ")).toLowerCase() +
+            "_"
+        );
+        return (
+            input[0].toUpperCase() +
+            input.substring(1, input.indexOf(" ")).toLowerCase()
+        );
+    }
 
 // If input is a full name: Find the first name
 function findFirstName(input) {
@@ -84,7 +86,7 @@ function thirdLetterCap(input) {
 capCharAfter(input);
 
 function capCharAfter(input) {
-    console.log();
+    console.log(input.charAt(input.search(" ") + 1).toUpperCase());
 
     // if (input.includes("-")) {
     //     console.log(input.charAt(input.indexOf("-") + 1).toUpperCase())
@@ -101,6 +103,6 @@ function capCharAfter(input) {
             input.charAt(input.indexOf("-") + 1).toUpperCase(),
             input.charAt(input.indexOf(" ") + 1).toUpperCase()
         );
-        // if (input.charAt(?) === "-"
     }
+    // if (input.charAt(?) === "-"
 }
