@@ -96,6 +96,11 @@ function capCharAfter(input) {
     //     return input.charAt(input.indexOf(" ") + 1).toUpperCase();
     // }
 
+    const hyphenPos = input.indexOf("-");
+    const spacePos = input.indexOf(" ");
+
+    // result = input.substring(0, hyphenPos) + index.substring(hyphenPos, hyphenPos + 2).toUpperCase() + input.substring(hyphenPos+2);
+
     if (input.includes("-") || input.includes(" ")) {
         console.log(input.charAt(input.indexOf("-") + 1).toUpperCase());
         console.log(input.charAt(input.indexOf(" ") + 1).toUpperCase());
@@ -105,4 +110,9 @@ function capCharAfter(input) {
         );
     }
     // if (input.charAt(?) === "-"
+    // const strArr = input.split("");
+    // strArr.map((char, i, arr)=> {
+    // console.log("I", arr[i];
+    // if (" -").includes(arr[i-1])){return char.toUpperCase();}
+
 }
